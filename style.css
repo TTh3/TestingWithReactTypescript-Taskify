@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&family=Nunito:wght@400;600&display=swap');
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading {
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--bs-blue);
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.InputField{
+  display: flex;
+  gap: 5px;
+  width: 90%;
+}
+.InputField *{
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+.InputFieldBox{
+  padding-left: 5px;
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid rgb(189, 189, 189);
+  outline-color: var(--bs-gray);
+  background-color: var(--bs-light);
+}
+
+.InputFieldSubmitBtn{
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background-color: var(--bs-blue);
+  color:#fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.InputFieldSubmitBtn:hover{
+  background-color: var(--bs-indigo)
+}
+.InputFieldSubmitBtn:active{
+  transform: scale(0.9);
+}
