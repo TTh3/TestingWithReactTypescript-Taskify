@@ -80,3 +80,16 @@
 .InputFieldSubmitBtn:active{
   transform: scale(0.9);
 }
+.Todos{
+  width: 90%;
+  padding: 10px;
+  background-color: var(--bs-light);
+}
+.EachTodo{
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.EachTodo li{
+  list-style: none;
+}
