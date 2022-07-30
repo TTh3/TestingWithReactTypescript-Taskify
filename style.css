@@ -32,7 +32,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+.App {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -47,16 +47,16 @@
   font-family: 'Edu VIC WA NT Beginner', cursive;
 }
 
-.InputField{
+.InputField {
   display: flex;
   gap: 5px;
   width: 90%;
 }
-.InputField *{
+.InputField * {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
 }
-.InputFieldBox{
+.InputFieldBox {
   padding-left: 5px;
   width: 100%;
   border-radius: 4px;
@@ -65,31 +65,42 @@
   background-color: var(--bs-light);
 }
 
-.InputFieldSubmitBtn{
+.InputFieldSubmitBtn {
   padding: 10px;
   border-radius: 6px;
   border: none;
   background-color: var(--bs-blue);
-  color:#fff;
+  color: #fff;
   cursor: pointer;
   transition: 0.2s ease;
 }
-.InputFieldSubmitBtn:hover{
-  background-color: var(--bs-indigo)
+.InputFieldSubmitBtn:hover {
+  background-color: var(--bs-indigo);
 }
-.InputFieldSubmitBtn:active{
+.InputFieldSubmitBtn:active {
   transform: scale(0.9);
 }
-.Todos{
+.Todos {
   width: 90%;
   padding: 10px;
   background-color: var(--bs-light);
 }
-.EachTodo{
+.Todos:empty{
+  background-color: #fff;
+}
+.EachTodo {
   font-family: 'Nunito', sans-serif;
   display: flex;
   justify-content: space-between;
 }
-.EachTodo li{
+
+.EachTodo li {
   list-style: none;
+}
+.EachTodo li input.InActive {
+  border: none;
+  background-color: transparent;
+}
+.EachTodo .TodoActions svg {
+  cursor: pointer;
 }

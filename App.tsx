@@ -4,6 +4,7 @@ import InputField from './components/InputField';
 import TodoList from './components/TodoList';
 import { Todo } from './model';
 import './style.css';
+// import { useAutoAnimate } from '@formkit/auto-animate/react';
 
 const App: React.FC = () => {
   const [Todo, setTodo] = useState<string>('');
@@ -12,10 +13,12 @@ const App: React.FC = () => {
     e.preventDefault();
     if (Todo) {
       setTodos([...Todos, { id: Date.now(), Todo, isDone: false }]);
-      setTodo("")
+      setTodo('');
     }
   };
-  console.log(Todos)
+  // const [animationParent] = useAutoAnimate<HTMLDivElement>();
+
+  console.log(Todos);
   return (
     <div className="App">
       <h1 className="heading">Taskify</h1>
@@ -24,7 +27,7 @@ const App: React.FC = () => {
         setTodo={setTodo}
         handleSetTodos={handleSetTodos}
       />
-      <TodoList Todos={Todos} setTodos={setTodos}/>
+      <TodoList Todos={Todos} setTodos={setTodos} />
     </div>
   );
 };
